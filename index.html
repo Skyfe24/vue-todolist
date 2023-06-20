@@ -30,13 +30,15 @@
 
                     <!-- slider immagine principale-->
                     <div class="gallery">
-                         <ul>
-                            
-                            
-                            <li>{{ todos }} </li>
-                        </ul>
-                        
--------------------------------
+                        <ul>
+
+
+                            <li v-for="oggetto in todos"> 
+                                <del v-if="oggetto.done == false"> {{ oggetto.text }}</del>
+                                <div v-else>{{ oggetto.text }} </div>
+                            </li>
+
+                            -------------------------------
                     </div>
                     <!-- thumbnails-->
                     <div id="thumbnails">
