@@ -11,6 +11,7 @@ console.log("Vue ok", Vue);
 const app = Vue.createApp({
   data() {
     return {
+      nuovecosedafare: '',
       todos: [
         { text: "Studiare Vue", done: true },
         { text: "Completare l'esercizio Todolist", done: false },
@@ -20,6 +21,9 @@ const app = Vue.createApp({
   methods: {
     deleteTodo(targetIndex) {
       this.todos.splice(targetIndex, 1);
+    },
+    addTodo() {
+      alert('uiui')
     },
   },
 });

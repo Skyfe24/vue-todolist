@@ -37,8 +37,8 @@
                                 <del v-if="oggetto.done == false"> {{ oggetto.text }}</del>
                                 <div v-else>{{ oggetto.text }} </div> <button type="button" class="btn-close" @click="deleteTodo(i)"></button>
                             </li>
-
-                            -------------------------------
+                            <input v-model="nuovecosedafare" type="text" class="form-control" placeholder="Inserisci qui altre cose da fare">
+                            <button class="btn btn-outline-success" type="button" @click="addTodo"  > Daje </button>
                     </div>
                     
                 </div>
