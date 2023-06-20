@@ -23,7 +23,7 @@ const app = Vue.createApp({
       this.todos.splice(targetIndex, 1);
     },
     addTodo() {
-      alert('uiui')
+      this.todos.push(this.nuovecosedafare);
     },
   },
 });
