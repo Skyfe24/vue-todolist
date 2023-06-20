@@ -8,22 +8,19 @@ console.log("Vue ok", Vue);
 //Stampare all'interno di una lista HTML un item per ogni todo.
 //Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 
-
-
-
 const app = Vue.createApp({
   data() {
     return {
-        todos: [
-          {text: "Studiare Vue" ,done: true},
-          {text:"Completare l'esercizio Todolist" ,done: false},
-          
-        ],
-
-
+      todos: [
+        { text: "Studiare Vue", done: true },
+        { text: "Completare l'esercizio Todolist", done: false },
+      ],
     };
   },
-  
+  methods: {
+    deleteTodo(targetIndex) {
+      this.todos.splice(targetIndex, 1);
+    },
+  },
 });
 app.mount("#root");
-
