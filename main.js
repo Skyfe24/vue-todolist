@@ -14,17 +14,11 @@ console.log("Vue ok", Vue);
 const app = Vue.createApp({
   data() {
     return {
-        currentIndex: 0,
-      todo1: [
-        {text: "Studiare Vue" },
-        {done: true},
-        
-      ],
-      todo2: [
-        { text:"Completare l'esercizio Todolist" },
-        { done: false},
-        
-      ],
+        todos: [
+          {text: "Studiare Vue" ,done: true},
+          {text:"Completare l'esercizio Todolist" ,done: false},
+          
+        ],
 
 
     };
